@@ -52,7 +52,7 @@ export class ChatComponent {
 
  responses: WritableSignal<DisplayMessage[]> = signal([
    {
-     text: "¡Hola!, ¿Cómo puedo ayudarte hoy?",
+     text: "hola soy el asistente virtual de la empresa 000000 ¡en que puedo ayudarte?",
      type: MessageType.Response
    }
  ]);

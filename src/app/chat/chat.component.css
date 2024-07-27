@@ -28,12 +28,12 @@
 }
 .conversations-prompt {
   margin-left: auto;
-  background: #c2a5d84d;
-  color: white;
+  background: #ECB176;
+  color: #ffffff;
 }
 .conversations-response {
   color: #fff;
-  background: #00c9d8;
+  background: #6F4E37;
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
@@ -48,7 +48,7 @@
 .prompt-form {
   display: flex;
   flex-flow: row nowrap;
-  background: #c77dff47;
+  background: #ECB176;
 }
 .prompt-input {
   flex-grow: 9;
@@ -58,26 +58,26 @@
   background: transparent !important;
 }
 .prompt-input:focus-visible {
-  border-color: #6f6bf8;
+  border-color: #ffffff;
 }
 .prompt-send-button {
   flex-grow: 0;
   flex-shrink: 0;
   height: 62px;
   width: 62px;
-  background: #c77dff;
+  background: #e6a072;
   font-size: 1.4em;
   outline: transparent;
   border-color: transparent;
   border-radius: 30px;
   padding: 0;
-  color: white;
+  color: rgb(255, 240, 199);
 }
 
 .loader {
   width: 60px;
   aspect-ratio: 4;
-  background: radial-gradient(circle closest-side, #00c9d8 90%, #0000) 0 /
+  background: radial-gradient(circle closest-side, #754200 90%, #0000) 0 /
     calc(100% / 3) 100% space;
   clip-path: inset(0 100% 0 0);
   animation: l1 1s steps(4) infinite;

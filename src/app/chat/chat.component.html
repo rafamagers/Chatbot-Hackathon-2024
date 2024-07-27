@@ -2,17 +2,17 @@
   <div class="say-hello-img">
     <img
       class="finny-bot"
-      ngSrc="https://i.ibb.co/S7ptrVJ/finny-bot-without-bg.png"
+      ngSrc="https://radcolombia.org/web/sites/default/files/archivos/instituciones/universidad-norte/logo-uninorte.png"
       alt="FinnyBot"
-      height="1024"
-      width="1024"
+      height="500"
+      width="500"
     />
   </div>
 
   <div class="say-hello-text">
-    <h4>¡Estoy acá para ayudarte!</h4>
-
-    <h4>Intenta preguntando, ¿Cuales son mis facturas pendientes?</h4>
+#
+#
+#
   </div>
 </div>
 
@@ -24,7 +24,7 @@
       @if(response.type === 'RESPONSE') {
         <span
           class="chatbot-emoji">
-        🤖
+          🏭
       </span>
       }
       <markdown class="markdown" [data]="response.text"></markdown>
@@ -41,7 +41,7 @@
 
 <section class="prompt-area">
 <form class="prompt-form" (ngSubmit)="sendMessage($event)">
-  <input class="prompt-input" type="text" placeholder="¿Qué debo pagar hoy?" [formControl]="promptText">
+  <input class="prompt-input" type="text" placeholder="cuales son los estados financieros de la empresa ////////////////////" [formControl]="promptText">
   <button [disabled]="promptText.value === ''" class="prompt-send-button">▶</button>
 </form>
 </section>
