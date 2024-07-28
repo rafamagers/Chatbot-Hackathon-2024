@@ -43,6 +43,7 @@ interface DisplayMessage {
   ],
   templateUrl: './chat.component.html',
   styleUrl: './chat.component.css',
+  
 })
 
 export class ChatComponent { 

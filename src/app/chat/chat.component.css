@@ -12,7 +12,7 @@
   align-self: center;
 }
 .finny-bot {
-  width: 100%;
+  width: 45%;
   height: auto;
 }
 
@@ -28,12 +28,12 @@
 }
 .conversations-prompt {
   margin-left: auto;
-  background: #ECB176;
+  background: #03131f;
   color: #ffffff;
 }
 .conversations-response {
   color: #fff;
-  background: #6F4E37;
+  background: #153f65;
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
@@ -48,7 +48,7 @@
 .prompt-form {
   display: flex;
   flex-flow: row nowrap;
-  background: #ECB176;
+  background: rgb(160, 174, 192);
 }
 .prompt-input {
   flex-grow: 9;
@@ -65,7 +65,7 @@
   flex-shrink: 0;
   height: 62px;
   width: 62px;
-  background: #e6a072;
+  background: #a200ff;
   font-size: 1.4em;
   outline: transparent;
   border-color: transparent;
