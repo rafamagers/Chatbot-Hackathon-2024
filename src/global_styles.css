@@ -10,7 +10,11 @@ body {
   background: #edf4fe;
 }
 
-h1,
+h1 {
+  /* === COLOR LETRAS DEL LOS TITULOS DE LA INTERFAZ DE BIENVENIDA=== */
+ color: #03345c;
+ font-size: 3em;
+}
 h2 {
    /* === COLOR LETRAS DEL LOS TITULOS DE LA INTERFAZ DE BIENVENIDA=== */
   color: #c1e3ff;

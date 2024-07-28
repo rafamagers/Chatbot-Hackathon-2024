@@ -3,10 +3,16 @@
 }
 
 .primary-button {
-  width: 100%;
+  width: 50%;
 }
 
 .finny-bot {
   width: 10%;
   height: auto;
+}
+.containerboton {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center;    /* Centra verticalmente (si es necesario) */
+  height: 10vh;           /* Opcional: para centrar verticalmente en toda la vista */
 }
