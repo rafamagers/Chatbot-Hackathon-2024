@@ -6,16 +6,19 @@
 }
 
 body {
+  /* === COLOR FONDO === */
   background: #edf4fe;
 }
 
 h1,
 h2 {
-  color: #c77dff;
+   /* === COLOR LETRAS DEL LOS TITULOS DE LA INTERFAZ DE BIENVENIDA=== */
+  color: #c1e3ff;
   font-size: 3em;
 }
 body,
 input {
+   /* === COLOR TEXTO/PARRAFOS DE LA INTEFAZ BIENVENIDA === */
   font-size: 12px;
   color: #fff;
 }
@@ -25,7 +28,8 @@ input {
 }
 
 .primary-button {
-  background: #c77dff;
+   /* === COLOR DE EL BOTON PARA INICIAR  EL CHAT === */
+  background: #7d9bff;
   font-size: 2em;
   outline: transparent;
   border-color: transparent;
@@ -35,7 +39,7 @@ input {
 }
 
 .prompt-send-button {
-  background: #c77dff;
+  background: #95c9f3 ;
   font-size: 1.4em;
   outline: transparent;
   border-color: transparent;

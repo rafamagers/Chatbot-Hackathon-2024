@@ -12,7 +12,7 @@
   align-self: center;
 }
 .finny-bot {
-  width: 45%;
+  width: 10%;
   height: auto;
 }
 
@@ -28,10 +28,12 @@
 }
 .conversations-prompt {
   margin-left: auto;
-  background: #03131f;
+   /* === COLOR FONDO Y DEL TEXTO DEL USUARIO === */
+  background: #030b1f;
   color: #ffffff;
 }
 .conversations-response {
+     /* === COLOR FONDO Y DEL TEXTO DEL CHAT === */
   color: #fff;
   background: #153f65;
   display: flex;
@@ -48,6 +50,7 @@
 .prompt-form {
   display: flex;
   flex-flow: row nowrap;
+     /* === COLOR DE LA BARRA DEL PROM === */
   background: rgb(160, 174, 192);
 }
 .prompt-input {
@@ -65,7 +68,7 @@
   flex-shrink: 0;
   height: 62px;
   width: 62px;
-  background: #a200ff;
+  background: #002fff;
   font-size: 1.4em;
   outline: transparent;
   border-color: transparent;
@@ -77,7 +80,8 @@
 .loader {
   width: 60px;
   aspect-ratio: 4;
-  background: radial-gradient(circle closest-side, #754200 90%, #0000) 0 /
+  /* === COLOR DE LA CARGA === */
+  background: radial-gradient(circle closest-side, #2f82ff 90%, #0000) 0 /
     calc(100% / 3) 100% space;
   clip-path: inset(0 100% 0 0);
   animation: l1 1s steps(4) infinite;

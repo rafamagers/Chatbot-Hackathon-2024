@@ -1,77 +1,170 @@
-<div class="welcome">
-  <h1>¡Conoce a FinnyBot!</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="#03131f">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Preses Optimal - Conoce a FinnyBot</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+        /* === COLOR FONDO=== */
+      background-color: #edf4fe;
+    }
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .welcome {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .welcome h1 {
+      font-size: 2.5em;
+    }
+      /* === COLOR SUBTITULO=== */
+    .animated-text {
+      font-size: 1.2em;
+      color: #333333;
+      margin-bottom: 20px;
+    }
+    .finny-bot {
+      margin: 20px 0;
+    }
+    .primary-button {
+      margin: 20px 0;
+    }
+    .button {
+      margin: 0;
+      height: auto;
+      background: transparent;
+      padding: 0;
+      border: none;
+      cursor: pointer;
+    }
+      /* === COLOR DE COVERSACION Y ANIMACION=== */
+    .button {
+      --border-right: 10px;
+      --text-stroke-color: rgba(17, 17, 17, 0.6);
+      --animation-color: #090a33;
+      --fs-size: 2em;
+      letter-spacing: 3px;
+      text-decoration: none;
+      font-size: var(--fs-size);
+      font-family: "Arial";
+      position: relative;
+      text-transform: uppercase;
+      color: transparent;
+      -webkit-text-stroke: 1px var(--text-stroke-color);
+    }
+    .hover-text {
+      position: absolute;
+      box-sizing: border-box;
+      color: var(--animation-color);
+      width: 0%;
+      inset: 0;
+      border-right: var(--border-right) solid var(--animation-color);
+      overflow: hidden;
+      transition: 0.5s;
+      -webkit-text-stroke: 1px var(--animation-color);
+    }
+      /* === TAMAÑO ANIMACION=== */
+    .button:hover .hover-text {
+      width: 100%;
+      filter: drop-shadow(0 0 23px var(--animation-color));
+    }
+      /* === COLOR DEL FONDO DE LOS RECUADROS=== */
+    .company-info {
+      margin: 40px 0;
+      background: #03131f;
+      padding: 20px;
+      border-radius: 8px;
+        /* === AURA DE LOS RECUADROS === */
+      box-shadow: 0 0 10px #1f0303;
+    }
+    .company-info h2 {
+      text-align: center;
+    }
+    .team {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+      /* === RECUADROS DE IMAGENES COLOR === */
+    .team-member {
+      background: #000000;
+      padding: 20px;
+      border-radius: 8px;
+        /* === AURA DE LOS RECUADFROS DE IMAGENES === */
+      box-shadow: 0 0 10px #0011ff;
+      width: 200px;
+      text-align: center;
+    }
+    .team-member img {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="welcome">
+      <h1>BIENVENIDO A PROSES OPTIMAL</h1>
+      <p class="animated-text">LA MEJOR EMPRESA DE ENVIO DEL UNIVERSO</p>
+      <img class="finny-bot" ngSrc="https://i.ibb.co/S7ptrVJ/finny-bot-without-bg.png" alt="FinnyBot" height="100" width="100" />
+    </div>
 
-  <p>bien</p>
-  <p class="animated-text">Lo sé, no quieres tener ésta app instalada, pero realmente te ayudará.</p>
+    <div class="company-info">
+      <h2>Acerca de Preses Optimal</h2>
+      <h3>Objetivo</h3>
+      <p>Proveer soluciones de envío eficientes y seguras que conecten personas y negocios de manera rápida y fiable.</p>
+      
+      <h3>Misión</h3>
+      <p>Facilitar el transporte de bienes con un enfoque en la seguridad, rapidez y sostenibilidad, brindando un servicio excepcional a nuestros clientes.</p>
+      
+      <h3>Enfoque a Futuro</h3>
+      <p>Innovar continuamente en tecnología y procesos logísticos para mantenernos a la vanguardia de la industria de envíos, reduciendo el impacto ambiental y mejorando la satisfacción del cliente.</p>
+    </div>
 
-
-  <img
-    class="finny-bot"
-    ngSrc="https://i.ibb.co/S7ptrVJ/finny-bot-without-bg.png"
-    alt="FinnyBot"
-    height="50"
-    width="50"
-  />
-  <button class="primary-button" routerLink="/chat">
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Button Animation</title>
-      <style>
-        /* === removing default button style === */
-        .button {
-          margin: 0;
-          height: auto;
-          background: transparent;
-          padding: 0;
-          border: none;
-          cursor: pointer;
-        }
-    
-        /* === button styling === */
-        .button {
-          --border-right: 10px;
-          --text-stroke-color: rgba(0, 0, 0, 0.6);
-          --animation-color: #090a33;
-          --fs-size: 2em;
-          letter-spacing: 3px;
-          text-decoration: none;
-          font-size: var(--fs-size);
-          font-family: "Arial";
-          position: relative;
-          text-transform: uppercase;
-          color: transparent;
-          -webkit-text-stroke: 1px var(--text-stroke-color);
-        }
-    
-        /* === this is the text, when you hover on button === */
-        .hover-text {
-          position: absolute;
-          box-sizing: border-box;
-          color: var(--animation-color);
-          width: 0%;
-          inset: 0;
-          border-right: var(--border-right) solid var(--animation-color);
-          overflow: hidden;
-          transition: 0.5s;
-          -webkit-text-stroke: 1px var(--animation-color);
-        }
-    
-        /* === hover === */
-        .button:hover .hover-text {
-          width: 100%;
-          filter: drop-shadow(0 0 23px var(--animation-color));
-        }
-      </style>
-    </head>
-    <body>
-      <button class="button">
-        <span class="hover-text" data-text="¡Haz clic aquí!">listo</span>
-        listo?
+    <div class="company-info">
+      <h2>Conoce a Nuestro Equipo</h2>
+      <div class="team">
+        <div class="team-member">
+          <img src="https://i.ibb.co/album-placeholder" alt="Miembro del equipo 1">
+          <h3>Nombre 1</h3>
+          <p>CEO</p>
+        </div>
+        <div class="team-member">
+          <img src="https://i.ibb.co/album-placeholder" alt="Miembro del equipo 2">
+          <h3>Nombre 2</h3>
+          <p>COO</p>
+        </div>
+        <div class="team-member">
+          <img src="https://i.ibb.co/album-placeholder" alt="Miembro del equipo 3">
+          <h3>Nombre 3</h3>
+          <p>CTO</p>
+        </div>
+        <div class="team-member">
+          <img src="https://i.ibb.co/album-placeholder" alt="Miembro del equipo 4">
+          <h3>Nombre 4</h3>
+          <p>CMO</p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <button class="primary-button" routerLink="/chat">
+              <button class="button">
+        <span class="hover-text" data-text="¡Haz clic aquí!">iniciar</span>
+        iniciar coversación
       </button>
-    </body>
-    </html>
-    </button>
-</div>
+      </button>
+    </div>
+  </div>
+</body>
+</html>
