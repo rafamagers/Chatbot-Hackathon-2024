@@ -129,6 +129,9 @@ export class ChatComponent {
      window.scrollTo(0, document.body.scrollHeight);
    }, 0);
  }
+ fillPrompt(text: string) {
+  this.promptText.setValue(text);
+}
 }
 
 

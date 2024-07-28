@@ -20,22 +20,25 @@
   padding-bottom: 62px;
 }
 .conversations-message {
-  padding: 10px;
-  max-width: 80%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  max-width: 70%;
   border-radius: 40px;
   margin-bottom: 10px;
   font-size: 1.2em;
 }
 .conversations-prompt {
+
   margin-left: auto;
    /* === COLOR FONDO Y DEL TEXTO DEL USUARIO === */
-  background: #030b1f;
+  background: #153f65;
   color: #ffffff;
 }
 .conversations-response {
      /* === COLOR FONDO Y DEL TEXTO DEL CHAT === */
-  color: #fff;
-  background: #153f65;
+  color: #030303;
+  background: #bfdefa;
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
@@ -51,7 +54,7 @@
   display: flex;
   flex-flow: row nowrap;
      /* === COLOR DE LA BARRA DEL PROM === */
-  background: rgb(160, 174, 192);
+  background: #153f65;
 }
 .prompt-input {
   flex-grow: 9;
@@ -59,6 +62,13 @@
   padding: 20px;
   border: none;
   background: transparent !important;
+  color: #ffffff; /* Cambia este valor al color que desees */
+  
+}
+.prompt-input::placeholder {
+
+  color: #aaa9a9; /* Cambia este valor al color que desees */
+  
 }
 .prompt-input:focus-visible {
   border-color: #ffffff;
@@ -101,4 +111,43 @@
 .markdown p {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.suggestions {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.suggestion {
+  display: inline-block;
+  margin-left: 20px;
+  padding: 10px;
+  background-color: #bfdefa;
+  border: 0.5px solid #153f65;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #000000;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 5px 5px 0px #000;
+}
+
+.suggestion:hover {
+  background-color: #153f65;
+  color: #ffffff;
+}
+
+
+.suggestion:hover {
+  background-color: #fff;
+  color: #153f65;
+  border: 0.5px solid #153f65;
+  box-shadow: 5px 5px 0px #153f65;
+}
+
+.suggestion:active {
+  background-color: #fcf414;
+  box-shadow: none;
+  transform: translateY(4px);
 }

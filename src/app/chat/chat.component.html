@@ -24,7 +24,7 @@
       @if(response.type === 'RESPONSE') {
         <span
           class="chatbot-emoji">
-          🏭
+          📦
       </span>
       }
       <markdown class="markdown" [data]="response.text"></markdown>
@@ -40,6 +40,13 @@
 
 
 <section class="prompt-area">
+    <!-- Sugerencias de Preguntas -->
+    <div class="suggestions">
+      <div class="suggestion" (click)="fillPrompt('Buenos días')">Buenos días</div>
+      <div class="suggestion" (click)="fillPrompt('Dame información general de la empresa')">Dame información general de la empresa</div>
+      <div class="suggestion" (click)="fillPrompt('Mencioname procesos activos')">Mencioname procesos activos</div>
+    </div>
+  
 <form class="prompt-form" (ngSubmit)="sendMessage($event)">
   <input class="prompt-input" type="text" placeholder="¿Cuáles son los procesos internos en ProcessOptima?" [formControl]="promptText">
   <!DOCTYPE html>
