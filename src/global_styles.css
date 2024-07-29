@@ -25,6 +25,11 @@ h4 {
  color: #709dc2;
  font-size: 2em;
 }
+h5 {
+
+  color: #709dc2;
+  font-size: 15px ;
+}
 body,
 input {
    /* === COLOR TEXTO/PARRAFOS DE LA INTEFAZ BIENVENIDA === */
