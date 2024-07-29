@@ -1,20 +1,25 @@
-<div class="say-hello">
-  <div class="say-hello-img">
-    <img
-      class="finny-bot"
-      ngSrc="https://i.ibb.co/Kmkqb9S/4768412c-6411-4bd5-97ee-1d3347ca7db6-removebg-preview.jpg"
-      alt="FinnyBot"
-      height="500"
-      width="500"
-    />
+<div class="header">
+  <div class="say-hello">
+    <div class="say-hello-img">
+      <img
+        class="finny-bot"
+        ngSrc="https://i.ibb.co/Kmkqb9S/4768412c-6411-4bd5-97ee-1d3347ca7db6-removebg-preview.jpg"
+        alt="FinnyBot"
+        height="500"
+        width="500"
+      />
+    </div>
+  
+    <div class="say-hello-text">
+  #
+  
+  #
+    </div>
   </div>
+  <button class="nacano-button" (click)="goBack()">Regresar</button>
 
-  <div class="say-hello-text">
-#
-
-#
-  </div>
 </div>
+
 
 <section class="conversations">
   @for (response of responses(); track response.text) {

@@ -14,7 +14,7 @@ import {
   onSnapshot,
 } from '@angular/fire/firestore';
 import { MarkdownComponent } from 'ngx-markdown';
-
+import { Location } from '@angular/common';
 
 enum Status {
   Pending = 'PENDING',
@@ -46,6 +46,9 @@ interface DisplayMessage {
   
 })
 
+
+
+
 export class ChatComponent { 
   promptText = new FormControl('');
  status = Status.Pending;
@@ -62,8 +65,8 @@ export class ChatComponent {
 
  private readonly firestore: Firestore = inject(Firestore);
  private readonly conversationsCollection = collection(this.firestore, 'conversations');
- 
- constructor() { }
+ constructor(private location: Location) {}
+
 
  async sendMessage(ev: Event) {
    ev.preventDefault();
@@ -131,6 +134,9 @@ export class ChatComponent {
  }
  fillPrompt(text: string) {
   this.promptText.setValue(text);
+}
+goBack(): void {
+  this.location.back();
 }
 }
 

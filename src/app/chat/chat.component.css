@@ -12,7 +12,7 @@
   align-self: center;
 }
 .finny-bot {
-  width: 10%;
+  width: 20%;
   height: auto;
 }
 
@@ -175,4 +175,37 @@
    /* === 2 y 1 primer color del degradado=== */
   background: linear-gradient(270deg, rgba(20, 41, 82, 0.681) 0%, #11283a 60%);
   color: rgb(255, 255, 255);
+}
+
+.nacano-button {
+  background-color: #153f65; /* Rosa brillante */
+  color: #fff; /* Blanco */
+  font-size: 1.2em; /* Tamaño de fuente grande */
+  font-weight: bold; /* Negrita */
+  height: 50px;  
+  padding: 10px 20px; /* Espaciado interno */
+  border: 2px solid #153f65; /* Borde rosa oscuro */
+  border-radius: 15px; /* Bordes redondeados */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+  transition: all 0.3s ease; /* Transición suave */
+  cursor: pointer; /* Cursor de puntero */
+}
+
+.nacano-button:hover {
+  background-color: #164d7c; /* Cambio de color al pasar el mouse */
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15); /* Mayor sombra al pasar el mouse */
+  transform: scale(1.05); /* Escalado al pasar el mouse */
+}
+
+.nacano-button:active {
+  background-color: #170264; /* Cambio de color al hacer clic */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Menor sombra al hacer clic */
+  transform: scale(0.98); /* Reducción de tamaño al hacer clic */
+}
+
+.header{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
 }
