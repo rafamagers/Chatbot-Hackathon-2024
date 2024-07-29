@@ -49,48 +49,9 @@
   
 <form class="prompt-form" (ngSubmit)="sendMessage($event)">
   <input class="prompt-input" type="text" placeholder="¿Cuáles son los procesos internos en ProcessOptima?" [formControl]="promptText">
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Styled Button</title>
-    <style>
-      .btn {
-        font-size: 1.2rem;
-        padding: 1rem 2.5rem;
-        border: none;
-        outline: none;
-        border-radius: 0rem;
-        cursor: pointer;
-        text-transform: uppercase;
-        /* === color boton=== */
-        background-color: rgb(3, 16, 34);
-        /* === texto del boton === */
-        color: rgb(234, 234, 234);
-        font-weight: 700;
-        transition: 0.6s;
-        /* === AURA DE LOS RECUADFROS DE IMAGENES === */
-        box-shadow: 0px 0px 60px #1100ff;
-        -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
-      }
-  
-      .btn:active {
-        scale: 0.92;
-      }
-  
-      .btn:hover {
-        background: rgb(17, 0, 250);
-         /* === 2 y 1 primer color del degradado=== */
-        background: linear-gradient(270deg, rgba(20, 41, 82, 0.681) 0%, #11283a 60%);
-        color: rgb(255, 255, 255);
-      }
-    </style>
-  </head>
-  <body>
-    <button class="btn">Enviar</button>
-  </body>
-  </html>
+  <button class="btn">✉ Enviar</button>
+ 
+ 
   
 </form>
 </section>
