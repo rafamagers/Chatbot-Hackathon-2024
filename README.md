@@ -28,7 +28,8 @@ Antes de comenzar, asegúrate de tener instalado Node.js y npm en tu máquina. P
     ```
 
 ## Ejecución
-
+Puedes ingresar al link https://yellow-dune-0bea93610.5.azurestaticapps.net/
+O
 Para iniciar el servidor de desarrollo y ver la aplicación en tu navegador:
 
 ```sh
